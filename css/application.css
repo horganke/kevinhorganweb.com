@@ -1,0 +1,111 @@
+/* line 1, ../sass/components/_base.scss */
+.container {
+  padding: 0 30px;
+}
+
+/* line 5, ../sass/components/_base.scss */
+#masthead {
+  height: 500px;
+  background: #3C72CA;
+  padding-top: 150px;
+}
+
+/* line 12, ../sass/components/_base.scss */
+#work {
+  height: 3000px;
+}
+
+/* line 1, ../sass/components/_nav.scss */
+header {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #fff;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 16, ../sass/components/_nav.scss */
+header #logo {
+  height: 150px;
+  float: left;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 27, ../sass/components/_nav.scss */
+header nav {
+  display: inline-block;
+  float: right;
+}
+/* line 31, ../sass/components/_nav.scss */
+header nav a {
+  line-height: 150px;
+  margin-left: 30px;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #333;
+  vertical-align: middle;
+  border-bottom: 2px solid #fff;
+  text-decoration: none;
+}
+/* line 45, ../sass/components/_nav.scss */
+header nav a:hover {
+  -webkit-transition: all .1s ease-out;
+  -moz-transition: all .1s ease-out;
+  -o-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+  border-bottom-color: #333;
+}
+/* line 54, ../sass/components/_nav.scss */
+header nav .icon {
+  border-bottom: none;
+}
+/* line 57, ../sass/components/_nav.scss */
+header nav .icon .fa {
+  font-size: 38px;
+  vertical-align: sub;
+  border-bottom: none;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+/* line 67, ../sass/components/_nav.scss */
+header nav .icon .fa-linkedin-square:hover {
+  color: #0077b5;
+}
+/* line 71, ../sass/components/_nav.scss */
+header nav .icon .fa-github-square:hover {
+  color: #800080;
+}
+/* line 75, ../sass/components/_nav.scss */
+header nav .icon .fa-facebook-square:hover {
+  color: #3B5998;
+}
+
+/* line 84, ../sass/components/_nav.scss */
+header.smaller {
+  height: 75px;
+}
+/* line 87, ../sass/components/_nav.scss */
+header.smaller #logo {
+  height: 75px;
+}
+/* line 91, ../sass/components/_nav.scss */
+header.smaller nav a {
+  line-height: 75px;
+}
