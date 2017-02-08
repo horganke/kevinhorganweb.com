@@ -1,0 +1,61 @@
+@media screen and (max-width: 991px) {
+    #masthead h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        #menuIcon {
+            display: block;
+        }
+
+        nav {
+            display: none;
+
+            ul {
+                position: absolute;
+                background: #fff;
+                right: 0;
+                left: 0;
+                top: 75px;
+                text-align: center;
+                border-top: 1px solid #ecf0f1;
+                padding: 0;
+                display: none;
+
+                li {
+                    float: none;
+                    padding: 15px;
+                    display: block;
+
+                    a {
+                        line-height: initial;
+                        margin-left: 0;
+                    }
+                }
+
+                .icon {
+                    display: inline-block;
+                }
+            }
+        }
+
+    }   
+
+    #masthead h1 {
+        font-size: 28px;
+    }
+
+}
+
+@media (max-width: 589px) {
+    #masthead {
+        height: 250px;
+
+        h1 {
+            font-size: 24px;
+        }
+    }
+}

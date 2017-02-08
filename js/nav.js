@@ -1,12 +1,8 @@
 $(function(){
 
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 1){  
-            $('header').addClass("smaller");
-          }
-          else{
-            $('header').removeClass("smaller");
-          }
+     $('#menuIcon').click(function() {
+        $('#menuIcon').toggleClass('active');
+        $('nav, nav ul').toggleClass('shown');
     });
 
     // Binding an event handler to all anchors that contain

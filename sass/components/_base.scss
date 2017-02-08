@@ -1,15 +1,18 @@
-.container {
-	padding: 0 30px;
+body {
+	margin: 75px auto 0;
+	font-family: 'Open Sans', sans-serif;
 }
 
-#masthead {
-    
-    height: 500px;
-    background: #3C72CA;
-    padding-top: 150px;
+.clear {
+	clear: both;
+}
+
+.container {
+	padding: 0 30px;
+	overflow: hidden;
 }
 
 #work {
-    
     height: 3000px;
+    background:#ecf0f1;
 }

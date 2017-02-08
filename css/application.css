@@ -1,55 +1,73 @@
 /* line 1, ../sass/components/_base.scss */
+body {
+  margin: 75px auto 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 6, ../sass/components/_base.scss */
+.clear {
+  clear: both;
+}
+
+/* line 10, ../sass/components/_base.scss */
 .container {
   padding: 0 30px;
+  overflow: hidden;
 }
 
-/* line 5, ../sass/components/_base.scss */
-#masthead {
-  height: 500px;
-  background: #3C72CA;
-  padding-top: 150px;
-}
-
-/* line 12, ../sass/components/_base.scss */
+/* line 15, ../sass/components/_base.scss */
 #work {
   height: 3000px;
+  background: #ecf0f1;
 }
 
 /* line 1, ../sass/components/_nav.scss */
 header {
-  width: 100%;
-  height: 150px;
-  overflow: hidden;
+  background-color: #fff;
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 999;
-  background-color: #fff;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
 }
-/* line 16, ../sass/components/_nav.scss */
+/* line 9, ../sass/components/_nav.scss */
+header #page-top {
+  display: inline-block;
+}
+/* line 13, ../sass/components/_nav.scss */
 header #logo {
-  height: 150px;
+  height: 75px;
   float: left;
   cursor: pointer;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
 }
-/* line 27, ../sass/components/_nav.scss */
+/* line 19, ../sass/components/_nav.scss */
+header #menuIcon {
+  font-size: 30px;
+  float: right;
+  cursor: pointer;
+  display: none;
+  margin-top: 17px;
+  padding: 6px 10px;
+}
+/* line 29, ../sass/components/_nav.scss */
 header nav {
   display: inline-block;
   float: right;
 }
-/* line 31, ../sass/components/_nav.scss */
-header nav a {
-  line-height: 150px;
+/* line 33, ../sass/components/_nav.scss */
+header nav ul {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+}
+/* line 38, ../sass/components/_nav.scss */
+header nav ul li {
+  display: inline-block;
+  float: left;
+}
+/* line 42, ../sass/components/_nav.scss */
+header nav ul li a {
+  line-height: 75px;
   margin-left: 30px;
   -webkit-transition: all .2s ease-out;
   -moz-transition: all .2s ease-out;
@@ -62,21 +80,21 @@ header nav a {
   border-bottom: 2px solid #fff;
   text-decoration: none;
 }
-/* line 45, ../sass/components/_nav.scss */
-header nav a:hover {
+/* line 56, ../sass/components/_nav.scss */
+header nav ul li a:hover {
   -webkit-transition: all .1s ease-out;
   -moz-transition: all .1s ease-out;
   -o-transition: all .1s ease-out;
   transition: all .1s ease-out;
   border-bottom-color: #333;
 }
-/* line 54, ../sass/components/_nav.scss */
-header nav .icon {
+/* line 65, ../sass/components/_nav.scss */
+header nav ul .icon a {
   border-bottom: none;
 }
-/* line 57, ../sass/components/_nav.scss */
-header nav .icon .fa {
-  font-size: 38px;
+/* line 68, ../sass/components/_nav.scss */
+header nav ul .icon a .fa {
+  font-size: 30px;
   vertical-align: sub;
   border-bottom: none;
   -webkit-transition: all .2s ease-out;
@@ -84,28 +102,123 @@ header nav .icon .fa {
   -o-transition: all .2s ease-out;
   transition: all .2s ease-out;
 }
-/* line 67, ../sass/components/_nav.scss */
-header nav .icon .fa-linkedin-square:hover {
+/* line 78, ../sass/components/_nav.scss */
+header nav ul .icon a .fa-linkedin-square:hover {
   color: #0077b5;
 }
-/* line 71, ../sass/components/_nav.scss */
-header nav .icon .fa-github-square:hover {
+/* line 82, ../sass/components/_nav.scss */
+header nav ul .icon a .fa-github-square:hover {
   color: #800080;
 }
-/* line 75, ../sass/components/_nav.scss */
-header nav .icon .fa-facebook-square:hover {
+/* line 86, ../sass/components/_nav.scss */
+header nav ul .icon a .fa-facebook-square:hover {
   color: #3B5998;
 }
+/* line 95, ../sass/components/_nav.scss */
+header #navDropDown {
+  list-style: none;
+  background-color: #f2f2f2;
+  top: 94px;
+  position: absolute;
+  margin: 0;
+  right: 0;
+  left: 0;
+  z-index: 900;
+  height: 351px;
+  overflow: auto;
+}
 
-/* line 84, ../sass/components/_nav.scss */
-header.smaller {
-  height: 75px;
+/* line 109, ../sass/components/_nav.scss */
+.active {
+  background: #333;
+  color: #ffffff;
 }
-/* line 87, ../sass/components/_nav.scss */
-header.smaller #logo {
-  height: 75px;
+
+/* line 114, ../sass/components/_nav.scss */
+.shown {
+  display: block;
+  -webkit-transition: height 1.5s ease-in-out;
+  -moz-transition: height 1.5s ease-in-out;
+  -o-transition: height 1.5s ease-in-out;
+  transition: height 1.5s ease-in-out;
 }
-/* line 91, ../sass/components/_nav.scss */
-header.smaller nav a {
-  line-height: 75px;
+
+/* line 1, ../sass/components/_masthead.scss */
+#masthead {
+  position: relative;
+  height: 500px;
+  background: #3C72CA;
+}
+/* line 6, ../sass/components/_masthead.scss */
+#masthead h1 {
+  text-align: center;
+  font-size: 38px;
+  line-height: 1.5;
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 991px) {
+  /* line 2, ../sass/components/_responsive.scss */
+  #masthead h1 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 10, ../sass/components/_responsive.scss */
+  header #menuIcon {
+    display: block;
+  }
+  /* line 14, ../sass/components/_responsive.scss */
+  header nav {
+    display: none;
+  }
+  /* line 17, ../sass/components/_responsive.scss */
+  header nav ul {
+    position: absolute;
+    background: #fff;
+    right: 0;
+    left: 0;
+    top: 75px;
+    text-align: center;
+    border-top: 1px solid #ecf0f1;
+    padding: 0;
+    display: none;
+  }
+  /* line 28, ../sass/components/_responsive.scss */
+  header nav ul li {
+    float: none;
+    padding: 15px;
+    display: block;
+  }
+  /* line 33, ../sass/components/_responsive.scss */
+  header nav ul li a {
+    line-height: initial;
+    margin-left: 0;
+  }
+  /* line 39, ../sass/components/_responsive.scss */
+  header nav ul .icon {
+    display: inline-block;
+  }
+
+  /* line 47, ../sass/components/_responsive.scss */
+  #masthead h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 589px) {
+  /* line 54, ../sass/components/_responsive.scss */
+  #masthead {
+    height: 250px;
+  }
+  /* line 57, ../sass/components/_responsive.scss */
+  #masthead h1 {
+    font-size: 24px;
+  }
 }
