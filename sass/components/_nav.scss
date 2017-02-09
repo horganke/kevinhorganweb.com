@@ -24,6 +24,10 @@ header {
         margin-top: 17px;
         padding: 6px 10px;
 
+        &.fa-close {
+            -webkit-text-stroke: 3px black;
+        }
+
     }
 
     nav {
@@ -107,15 +111,7 @@ header {
 }
 
 .active {
-    background: #333;
+    background: #000;
     color: #ffffff;
-}
-
-.shown {
-    display: block;
-    -webkit-transition: height 1.5s ease-in-out;
-    -moz-transition: height 1.5s ease-in-out;
-    -o-transition: height 1.5s ease-in-out;
-    transition: height 1.5s ease-in-out;
 }
 

@@ -1,6 +1,12 @@
 @media screen and (max-width: 991px) {
-    #masthead h1 {
-        font-size: 32px;
+    #masthead {
+        h1 {
+            font-size: 38px;
+        }
+
+        a {
+            top: 60%;
+        }
     }
 }
 
@@ -12,7 +18,6 @@
         }
 
         nav {
-            display: none;
 
             ul {
                 position: absolute;
@@ -21,13 +26,16 @@
                 left: 0;
                 top: 75px;
                 text-align: center;
-                border-top: 1px solid #ecf0f1;
                 padding: 0;
-                display: none;
+                height: 0;
+                -webkit-transition: height 0.3s ease-out;
+                -moz-transition: height 0.3s ease-out;
+                -o-transition: height 0.3s ease-out;
+                transition: height 0.3s ease-out;
 
                 li {
                     float: none;
-                    padding: 15px;
+                    padding: 10px;
                     display: block;
 
                     a {
@@ -38,24 +46,46 @@
 
                 .icon {
                     display: inline-block;
+                    padding-top: 17px;
                 }
             }
         }
 
-    }   
 
-    #masthead h1 {
-        font-size: 28px;
+        .shown {
+            height: 195px;
+            border-top: 1px solid #ecf0f1;
+        }
+
+    }
+
+    main {
+        &.overlay:after {
+            content: '';
+            display: block;
+            position: fixed;
+            top: 0; bottom: 0; left: 0; right: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+        }
     }
 
 }
 
-@media (max-width: 589px) {
+@media (max-width: 658px) {
     #masthead {
-        height: 250px;
+        height: 275px;
 
         h1 {
-            font-size: 24px;
+            font-size: 20px;
+        }
+
+        a {
+            font-size: 18px;
+            top: 65%;
+            width: 100%;
         }
     }
 }
+

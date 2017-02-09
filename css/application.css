@@ -1,24 +1,19 @@
 /* line 1, ../sass/components/_base.scss */
 body {
   margin: 75px auto 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
 }
 
-/* line 6, ../sass/components/_base.scss */
+/* line 7, ../sass/components/_base.scss */
 .clear {
   clear: both;
 }
 
-/* line 10, ../sass/components/_base.scss */
+/* line 11, ../sass/components/_base.scss */
 .container {
   padding: 0 30px;
   overflow: hidden;
-}
-
-/* line 15, ../sass/components/_base.scss */
-#work {
-  height: 3000px;
-  background: #ecf0f1;
 }
 
 /* line 1, ../sass/components/_nav.scss */
@@ -49,23 +44,27 @@ header #menuIcon {
   margin-top: 17px;
   padding: 6px 10px;
 }
-/* line 29, ../sass/components/_nav.scss */
+/* line 27, ../sass/components/_nav.scss */
+header #menuIcon.fa-close {
+  -webkit-text-stroke: 3px black;
+}
+/* line 33, ../sass/components/_nav.scss */
 header nav {
   display: inline-block;
   float: right;
 }
-/* line 33, ../sass/components/_nav.scss */
+/* line 37, ../sass/components/_nav.scss */
 header nav ul {
   list-style: none;
   margin: 0;
   overflow: hidden;
 }
-/* line 38, ../sass/components/_nav.scss */
+/* line 42, ../sass/components/_nav.scss */
 header nav ul li {
   display: inline-block;
   float: left;
 }
-/* line 42, ../sass/components/_nav.scss */
+/* line 46, ../sass/components/_nav.scss */
 header nav ul li a {
   line-height: 75px;
   margin-left: 30px;
@@ -80,7 +79,7 @@ header nav ul li a {
   border-bottom: 2px solid #fff;
   text-decoration: none;
 }
-/* line 56, ../sass/components/_nav.scss */
+/* line 60, ../sass/components/_nav.scss */
 header nav ul li a:hover {
   -webkit-transition: all .1s ease-out;
   -moz-transition: all .1s ease-out;
@@ -88,11 +87,11 @@ header nav ul li a:hover {
   transition: all .1s ease-out;
   border-bottom-color: #333;
 }
-/* line 65, ../sass/components/_nav.scss */
+/* line 69, ../sass/components/_nav.scss */
 header nav ul .icon a {
   border-bottom: none;
 }
-/* line 68, ../sass/components/_nav.scss */
+/* line 72, ../sass/components/_nav.scss */
 header nav ul .icon a .fa {
   font-size: 30px;
   vertical-align: sub;
@@ -102,19 +101,19 @@ header nav ul .icon a .fa {
   -o-transition: all .2s ease-out;
   transition: all .2s ease-out;
 }
-/* line 78, ../sass/components/_nav.scss */
+/* line 82, ../sass/components/_nav.scss */
 header nav ul .icon a .fa-linkedin-square:hover {
   color: #0077b5;
 }
-/* line 82, ../sass/components/_nav.scss */
+/* line 86, ../sass/components/_nav.scss */
 header nav ul .icon a .fa-github-square:hover {
   color: #800080;
 }
-/* line 86, ../sass/components/_nav.scss */
+/* line 90, ../sass/components/_nav.scss */
 header nav ul .icon a .fa-facebook-square:hover {
   color: #3B5998;
 }
-/* line 95, ../sass/components/_nav.scss */
+/* line 99, ../sass/components/_nav.scss */
 header #navDropDown {
   list-style: none;
   background-color: #f2f2f2;
@@ -128,58 +127,94 @@ header #navDropDown {
   overflow: auto;
 }
 
-/* line 109, ../sass/components/_nav.scss */
+/* line 113, ../sass/components/_nav.scss */
 .active {
-  background: #333;
+  background: #000;
   color: #ffffff;
-}
-
-/* line 114, ../sass/components/_nav.scss */
-.shown {
-  display: block;
-  -webkit-transition: height 1.5s ease-in-out;
-  -moz-transition: height 1.5s ease-in-out;
-  -o-transition: height 1.5s ease-in-out;
-  transition: height 1.5s ease-in-out;
 }
 
 /* line 1, ../sass/components/_masthead.scss */
 #masthead {
   position: relative;
-  height: 500px;
+  height: 550px;
   background: #3C72CA;
+  padding: 0 30px;
 }
-/* line 6, ../sass/components/_masthead.scss */
-#masthead h1 {
+
+/* line 8, ../sass/components/_masthead.scss */
+#introduction {
+  position: relative;
+  height: 100%;
+}
+/* line 13, ../sass/components/_masthead.scss */
+#introduction h1 {
   text-align: center;
-  font-size: 38px;
+  font-size: 48px;
   line-height: 1.5;
   margin: 0;
   color: #fff;
   font-weight: 600;
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/* line 27, ../sass/components/_masthead.scss */
+#introduction a {
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.5;
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: color 0.3s ease;
+}
+/* line 40, ../sass/components/_masthead.scss */
+#introduction a .fa {
+  display: block;
+  text-decoration: none;
+  line-height: 0.5;
+}
+/* line 46, ../sass/components/_masthead.scss */
+#introduction a:hover {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+/* line 1, ../sass/components/_work.scss */
+#work {
+  height: 3000px;
+  background: #ecf0f1;
+}
+/* line 5, ../sass/components/_work.scss */
+#work h3 {
+  padding: 50px 30px 0;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+}
 
 @media screen and (max-width: 991px) {
-  /* line 2, ../sass/components/_responsive.scss */
+  /* line 3, ../sass/components/_responsive.scss */
   #masthead h1 {
-    font-size: 32px;
+    font-size: 38px;
+  }
+  /* line 7, ../sass/components/_responsive.scss */
+  #masthead a {
+    top: 60%;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 10, ../sass/components/_responsive.scss */
+  /* line 16, ../sass/components/_responsive.scss */
   header #menuIcon {
     display: block;
   }
-  /* line 14, ../sass/components/_responsive.scss */
-  header nav {
-    display: none;
-  }
-  /* line 17, ../sass/components/_responsive.scss */
+  /* line 22, ../sass/components/_responsive.scss */
   header nav ul {
     position: absolute;
     background: #fff;
@@ -187,38 +222,62 @@ header #navDropDown {
     left: 0;
     top: 75px;
     text-align: center;
-    border-top: 1px solid #ecf0f1;
     padding: 0;
-    display: none;
+    height: 0;
+    -webkit-transition: height 0.3s ease-out;
+    -moz-transition: height 0.3s ease-out;
+    -o-transition: height 0.3s ease-out;
+    transition: height 0.3s ease-out;
   }
-  /* line 28, ../sass/components/_responsive.scss */
+  /* line 36, ../sass/components/_responsive.scss */
   header nav ul li {
     float: none;
-    padding: 15px;
+    padding: 10px;
     display: block;
   }
-  /* line 33, ../sass/components/_responsive.scss */
+  /* line 41, ../sass/components/_responsive.scss */
   header nav ul li a {
     line-height: initial;
     margin-left: 0;
   }
-  /* line 39, ../sass/components/_responsive.scss */
+  /* line 47, ../sass/components/_responsive.scss */
   header nav ul .icon {
     display: inline-block;
+    padding-top: 17px;
+  }
+  /* line 55, ../sass/components/_responsive.scss */
+  header .shown {
+    height: 195px;
+    border-top: 1px solid #ecf0f1;
   }
 
-  /* line 47, ../sass/components/_responsive.scss */
-  #masthead h1 {
-    font-size: 28px;
+  /* line 63, ../sass/components/_responsive.scss */
+  main.overlay:after {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
   }
 }
-@media (max-width: 589px) {
-  /* line 54, ../sass/components/_responsive.scss */
+@media (max-width: 658px) {
+  /* line 77, ../sass/components/_responsive.scss */
   #masthead {
-    height: 250px;
+    height: 275px;
   }
-  /* line 57, ../sass/components/_responsive.scss */
+  /* line 80, ../sass/components/_responsive.scss */
   #masthead h1 {
-    font-size: 24px;
+    font-size: 20px;
+  }
+  /* line 84, ../sass/components/_responsive.scss */
+  #masthead a {
+    font-size: 18px;
+    top: 65%;
+    width: 100%;
   }
 }

@@ -1,9 +1,13 @@
 $(function(){
 
-     $('#menuIcon').click(function() {
+    $('#menuIcon').click(function() {
+        $('main').toggleClass('overlay');
         $('#menuIcon').toggleClass('active');
-        $('nav, nav ul').toggleClass('shown');
+        $('#menuIcon').toggleClass("fa-bars fa-close");
+        $('nav ul').toggleClass('shown');
     });
+
+
 
     // Binding an event handler to all anchors that contain
     // a hash (#), but not necessarily JUST a hash - like href="#"
@@ -39,7 +43,7 @@ $(function(){
 
             if (target.length) {
                 $('html,body').animate({
-                    scrollTop: target.offset().top
+                    scrollTop: target.offset().top - $('header').height() + 1
                 }, 500);
                 return false;
             }
