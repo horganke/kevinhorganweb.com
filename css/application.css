@@ -3,14 +3,21 @@ body {
   margin: 75px auto 0;
   font-family: 'Montserrat', sans-serif;
   color: #000;
+  font-weight: 300;
 }
 
-/* line 7, ../sass/components/_base.scss */
+/* line 8, ../sass/components/_base.scss */
+p {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+/* line 13, ../sass/components/_base.scss */
 .clear {
   clear: both;
 }
 
-/* line 11, ../sass/components/_base.scss */
+/* line 17, ../sass/components/_base.scss */
 .container {
   padding: 0 30px;
   overflow: hidden;
@@ -73,7 +80,7 @@ header nav ul li a {
   -o-transition: all .2s ease-out;
   transition: all .2s ease-out;
   font-size: 1.2em;
-  font-weight: 500;
+  font-weight: 300;
   color: #333;
   vertical-align: middle;
   border-bottom: 2px solid #fff;
@@ -128,7 +135,7 @@ header #navDropDown {
 }
 
 /* line 113, ../sass/components/_nav.scss */
-.active {
+.open {
   background: #000;
   color: #ffffff;
 }
@@ -164,6 +171,7 @@ header #navDropDown {
 #introduction a {
   text-align: center;
   font-size: 28px;
+  font-weight: 500;
   line-height: 1.5;
   margin: 0;
   color: #fff;
@@ -174,13 +182,13 @@ header #navDropDown {
   transform: translate(-50%, -50%);
   transition: color 0.3s ease;
 }
-/* line 40, ../sass/components/_masthead.scss */
+/* line 41, ../sass/components/_masthead.scss */
 #introduction a .fa {
   display: block;
   text-decoration: none;
   line-height: 0.5;
 }
-/* line 46, ../sass/components/_masthead.scss */
+/* line 47, ../sass/components/_masthead.scss */
 #introduction a:hover {
   color: #000;
   transition: color 0.3s ease;
@@ -193,10 +201,62 @@ header #navDropDown {
 }
 /* line 5, ../sass/components/_work.scss */
 #work h3 {
-  padding: 50px 30px 0;
-  font-size: 28px;
+  padding: 40px 0 0 0;
+  font-size: 34px;
   font-weight: 500;
   margin: 0;
+  color: #3C72CA;
+  line-spacing: 2px;
+}
+/* line 14, ../sass/components/_work.scss */
+#work .column-one {
+  float: left;
+  width: 40%;
+  padding-right: 30px;
+}
+/* line 19, ../sass/components/_work.scss */
+#work .column-one h4 {
+  margin: 25px 0 0 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+/* line 25, ../sass/components/_work.scss */
+#work .column-one p {
+  font-size: 18px;
+  margin: 0;
+  margin: 10px 0;
+}
+/* line 31, ../sass/components/_work.scss */
+#work .column-one ul {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+}
+/* line 36, ../sass/components/_work.scss */
+#work .column-one ul li {
+  margin: 10px 0;
+}
+/* line 42, ../sass/components/_work.scss */
+#work .column-two {
+  float: right;
+  width: 55%;
+  padding-left: 30px;
+}
+/* line 48, ../sass/components/_work.scss */
+#work #slideshow {
+  width: 833px;
+  height: 490px;
+  max-width: 100%;
+  position: relative;
+  margin-top: 25px;
+}
+/* line 55, ../sass/components/_work.scss */
+#work #slideshow div {
+  position: absolute;
+}
+/* line 59, ../sass/components/_work.scss */
+#work #slideshow img {
+  max-width: 100%;
 }
 
 @media screen and (max-width: 991px) {
@@ -246,8 +306,8 @@ header #navDropDown {
     padding-top: 17px;
   }
   /* line 55, ../sass/components/_responsive.scss */
-  header .shown {
-    height: 195px;
+  header .nav-shown {
+    height: 200px;
     border-top: 1px solid #ecf0f1;
   }
 
@@ -273,8 +333,9 @@ header #navDropDown {
   /* line 80, ../sass/components/_responsive.scss */
   #masthead h1 {
     font-size: 20px;
+    font-weight: 500;
   }
-  /* line 84, ../sass/components/_responsive.scss */
+  /* line 85, ../sass/components/_responsive.scss */
   #masthead a {
     font-size: 18px;
     top: 65%;

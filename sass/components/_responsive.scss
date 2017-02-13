@@ -52,8 +52,8 @@
         }
 
 
-        .shown {
-            height: 195px;
+        .nav-shown {
+            height: 200px;
             border-top: 1px solid #ecf0f1;
         }
 
@@ -79,6 +79,7 @@
 
         h1 {
             font-size: 20px;
+            font-weight: 500;
         }
 
         a {

@@ -2,9 +2,9 @@ $(function(){
 
     $('#menuIcon').click(function() {
         $('main').toggleClass('overlay');
-        $('#menuIcon').toggleClass('active');
+        $('#menuIcon').toggleClass('open');
         $('#menuIcon').toggleClass("fa-bars fa-close");
-        $('nav ul').toggleClass('shown');
+        $('nav ul').toggleClass('nav-shown');
     });
 
 
