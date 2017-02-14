@@ -4,23 +4,34 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #000;
   font-weight: 300;
+  background: #ecf0f1;
 }
 
-/* line 8, ../sass/components/_base.scss */
+/* line 9, ../sass/components/_base.scss */
 p {
   font-size: 18px;
   line-height: 18px;
 }
 
-/* line 13, ../sass/components/_base.scss */
+/* line 14, ../sass/components/_base.scss */
 .clear {
   clear: both;
 }
 
-/* line 17, ../sass/components/_base.scss */
+/* line 18, ../sass/components/_base.scss */
 .container {
   padding: 0 30px;
   overflow: hidden;
+}
+
+/* line 23, ../sass/components/_base.scss */
+.shown {
+  display: block;
+}
+
+/* line 27, ../sass/components/_base.scss */
+.hidden {
+  display: none;
 }
 
 /* line 1, ../sass/components/_nav.scss */
@@ -120,7 +131,11 @@ header nav ul .icon a .fa-github-square:hover {
 header nav ul .icon a .fa-facebook-square:hover {
   color: #3B5998;
 }
-/* line 99, ../sass/components/_nav.scss */
+/* line 94, ../sass/components/_nav.scss */
+header nav ul .icon a .fa-envelope-square:hover {
+  color: #D32E2A;
+}
+/* line 103, ../sass/components/_nav.scss */
 header #navDropDown {
   list-style: none;
   background-color: #f2f2f2;
@@ -134,7 +149,7 @@ header #navDropDown {
   overflow: auto;
 }
 
-/* line 113, ../sass/components/_nav.scss */
+/* line 117, ../sass/components/_nav.scss */
 .open {
   background: #000;
   color: #ffffff;
@@ -194,13 +209,12 @@ header #navDropDown {
   transition: color 0.3s ease;
 }
 
-/* line 1, ../sass/components/_work.scss */
-#work {
-  height: 3000px;
-  background: #ecf0f1;
+/* line 3, ../sass/components/_work.scss */
+#work article {
+  overflow: hidden;
 }
-/* line 5, ../sass/components/_work.scss */
-#work h3 {
+/* line 6, ../sass/components/_work.scss */
+#work article h3 {
   padding: 40px 0 0 0;
   font-size: 34px;
   font-weight: 500;
@@ -208,54 +222,123 @@ header #navDropDown {
   color: #3C72CA;
   line-spacing: 2px;
 }
-/* line 14, ../sass/components/_work.scss */
-#work .column-one {
+/* line 15, ../sass/components/_work.scss */
+#work article .experience {
+  overflow: hidden;
+  background: #ecf0f1;
+}
+/* line 19, ../sass/components/_work.scss */
+#work article .experience.even {
+  background: #D3D7D7;
+}
+/* line 24, ../sass/components/_work.scss */
+#work article .column-one {
   float: left;
   width: 40%;
   padding-right: 30px;
 }
-/* line 19, ../sass/components/_work.scss */
-#work .column-one h4 {
+/* line 29, ../sass/components/_work.scss */
+#work article .column-one h4 {
   margin: 25px 0 0 0;
   font-size: 24px;
   font-weight: 400;
 }
-/* line 25, ../sass/components/_work.scss */
-#work .column-one p {
+/* line 35, ../sass/components/_work.scss */
+#work article .column-one p {
   font-size: 18px;
   margin: 0;
   margin: 10px 0;
 }
-/* line 31, ../sass/components/_work.scss */
-#work .column-one ul {
+/* line 41, ../sass/components/_work.scss */
+#work article .column-one a {
+  text-decoration: none;
+  color: #3C72CA;
+}
+/* line 45, ../sass/components/_work.scss */
+#work article .column-one a:hover {
+  text-decoration: underline;
+}
+/* line 50, ../sass/components/_work.scss */
+#work article .column-one ul {
   margin: 0;
   font-size: 18px;
   line-height: 26px;
 }
-/* line 36, ../sass/components/_work.scss */
-#work .column-one ul li {
+/* line 55, ../sass/components/_work.scss */
+#work article .column-one ul li {
   margin: 10px 0;
 }
-/* line 42, ../sass/components/_work.scss */
-#work .column-two {
+/* line 60, ../sass/components/_work.scss */
+#work article .column-one form {
+  text-align: center;
+  padding-top: 20px;
+  overflow: hidden;
+}
+/* line 66, ../sass/components/_work.scss */
+#work article .column-one form .switch-field {
+  display: inline-block;
+}
+/* line 69, ../sass/components/_work.scss */
+#work article .column-one form .switch-field input {
+  display: none;
+}
+/* line 72, ../sass/components/_work.scss */
+#work article .column-one form .switch-field input:checked + label {
+  background-color: #3C72CA;
+  color: white;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 80, ../sass/components/_work.scss */
+#work article .column-one form .switch-field label {
+  float: left;
+  display: inline-block;
+  width: 60px;
+  background-color: #D3D7D7;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: none;
+  padding: 6px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/* line 98, ../sass/components/_work.scss */
+#work article .column-one form .switch-field label:hover {
+  cursor: pointer;
+}
+/* line 102, ../sass/components/_work.scss */
+#work article .column-one form .switch-field label:first-of-type {
+  border-radius: 4px 0 0 4px;
+}
+/* line 106, ../sass/components/_work.scss */
+#work article .column-one form .switch-field label:last-of-type {
+  border-radius: 0 4px 4px 0;
+}
+/* line 114, ../sass/components/_work.scss */
+#work article .column-two {
   float: right;
   width: 55%;
   padding-left: 30px;
 }
-/* line 48, ../sass/components/_work.scss */
-#work #slideshow {
+/* line 120, ../sass/components/_work.scss */
+#work article .slideshow {
   width: 833px;
   height: 490px;
   max-width: 100%;
   position: relative;
   margin-top: 25px;
 }
-/* line 55, ../sass/components/_work.scss */
-#work #slideshow div {
+/* line 127, ../sass/components/_work.scss */
+#work article .slideshow div {
   position: absolute;
 }
-/* line 59, ../sass/components/_work.scss */
-#work #slideshow img {
+/* line 131, ../sass/components/_work.scss */
+#work article .slideshow img {
   max-width: 100%;
 }
 
