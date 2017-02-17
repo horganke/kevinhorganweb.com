@@ -8,28 +8,55 @@ body {
 }
 
 /* line 9, ../sass/components/_base.scss */
+h2 {
+  padding: 40px 0 0 0;
+  font-size: 34px;
+  font-weight: 500;
+  margin: 0;
+  color: #3C72CA;
+  letter-spacing: 2px;
+}
+
+/* line 18, ../sass/components/_base.scss */
+h3 {
+  margin: 25px 0 0 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* line 24, ../sass/components/_base.scss */
 p {
   font-size: 18px;
   line-height: 18px;
 }
 
-/* line 14, ../sass/components/_base.scss */
+/* line 29, ../sass/components/_base.scss */
+a {
+  text-decoration: none;
+  color: #3C72CA;
+}
+/* line 33, ../sass/components/_base.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 39, ../sass/components/_base.scss */
 .clear {
   clear: both;
 }
 
-/* line 18, ../sass/components/_base.scss */
+/* line 43, ../sass/components/_base.scss */
 .container {
   padding: 0 30px;
   overflow: hidden;
 }
 
-/* line 23, ../sass/components/_base.scss */
+/* line 48, ../sass/components/_base.scss */
 .shown {
   display: block;
 }
 
-/* line 27, ../sass/components/_base.scss */
+/* line 52, ../sass/components/_base.scss */
 .hidden {
   display: none;
 }
@@ -104,12 +131,13 @@ header nav ul li a:hover {
   -o-transition: all .1s ease-out;
   transition: all .1s ease-out;
   border-bottom-color: #333;
+  text-decoration: none;
 }
-/* line 69, ../sass/components/_nav.scss */
+/* line 70, ../sass/components/_nav.scss */
 header nav ul .icon a {
   border-bottom: none;
 }
-/* line 72, ../sass/components/_nav.scss */
+/* line 73, ../sass/components/_nav.scss */
 header nav ul .icon a .fa {
   font-size: 30px;
   vertical-align: sub;
@@ -119,23 +147,23 @@ header nav ul .icon a .fa {
   -o-transition: all .2s ease-out;
   transition: all .2s ease-out;
 }
-/* line 82, ../sass/components/_nav.scss */
+/* line 83, ../sass/components/_nav.scss */
 header nav ul .icon a .fa-linkedin-square:hover {
   color: #0077b5;
 }
-/* line 86, ../sass/components/_nav.scss */
+/* line 87, ../sass/components/_nav.scss */
 header nav ul .icon a .fa-github-square:hover {
   color: #800080;
 }
-/* line 90, ../sass/components/_nav.scss */
+/* line 91, ../sass/components/_nav.scss */
 header nav ul .icon a .fa-facebook-square:hover {
   color: #3B5998;
 }
-/* line 94, ../sass/components/_nav.scss */
+/* line 95, ../sass/components/_nav.scss */
 header nav ul .icon a .fa-envelope-square:hover {
   color: #D32E2A;
 }
-/* line 103, ../sass/components/_nav.scss */
+/* line 104, ../sass/components/_nav.scss */
 header #navDropDown {
   list-style: none;
   background-color: #f2f2f2;
@@ -149,7 +177,7 @@ header #navDropDown {
   overflow: auto;
 }
 
-/* line 117, ../sass/components/_nav.scss */
+/* line 118, ../sass/components/_nav.scss */
 .open {
   background: #000;
   color: #ffffff;
@@ -212,84 +240,61 @@ header #navDropDown {
 /* line 3, ../sass/components/_work.scss */
 #work article {
   overflow: hidden;
+  margin-bottom: 80px;
 }
-/* line 6, ../sass/components/_work.scss */
-#work article h3 {
-  padding: 40px 0 0 0;
-  font-size: 34px;
-  font-weight: 500;
-  margin: 0;
-  color: #3C72CA;
-  line-spacing: 2px;
-}
-/* line 15, ../sass/components/_work.scss */
+/* line 7, ../sass/components/_work.scss */
 #work article .experience {
   overflow: hidden;
   background: #ecf0f1;
 }
-/* line 19, ../sass/components/_work.scss */
+/* line 11, ../sass/components/_work.scss */
 #work article .experience.even {
   background: #D3D7D7;
 }
-/* line 24, ../sass/components/_work.scss */
+/* line 16, ../sass/components/_work.scss */
 #work article .column-one {
   float: left;
   width: 40%;
   padding-right: 30px;
 }
-/* line 29, ../sass/components/_work.scss */
-#work article .column-one h4 {
-  margin: 25px 0 0 0;
-  font-size: 24px;
-  font-weight: 400;
-}
-/* line 35, ../sass/components/_work.scss */
+/* line 21, ../sass/components/_work.scss */
 #work article .column-one p {
   font-size: 18px;
   margin: 0;
   margin: 10px 0;
 }
-/* line 41, ../sass/components/_work.scss */
-#work article .column-one a {
-  text-decoration: none;
-  color: #3C72CA;
-}
-/* line 45, ../sass/components/_work.scss */
-#work article .column-one a:hover {
-  text-decoration: underline;
-}
-/* line 50, ../sass/components/_work.scss */
+/* line 28, ../sass/components/_work.scss */
 #work article .column-one ul {
   margin: 0;
   font-size: 18px;
   line-height: 26px;
 }
-/* line 55, ../sass/components/_work.scss */
+/* line 33, ../sass/components/_work.scss */
 #work article .column-one ul li {
   margin: 10px 0;
 }
-/* line 60, ../sass/components/_work.scss */
+/* line 38, ../sass/components/_work.scss */
 #work article .column-one form {
   text-align: center;
   padding-top: 20px;
   overflow: hidden;
 }
-/* line 66, ../sass/components/_work.scss */
+/* line 44, ../sass/components/_work.scss */
 #work article .column-one form .switch-field {
   display: inline-block;
 }
-/* line 69, ../sass/components/_work.scss */
+/* line 47, ../sass/components/_work.scss */
 #work article .column-one form .switch-field input {
   display: none;
 }
-/* line 72, ../sass/components/_work.scss */
+/* line 50, ../sass/components/_work.scss */
 #work article .column-one form .switch-field input:checked + label {
   background-color: #3C72CA;
   color: white;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 80, ../sass/components/_work.scss */
+/* line 58, ../sass/components/_work.scss */
 #work article .column-one form .switch-field label {
   float: left;
   display: inline-block;
@@ -307,39 +312,75 @@ header #navDropDown {
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-/* line 98, ../sass/components/_work.scss */
+/* line 76, ../sass/components/_work.scss */
 #work article .column-one form .switch-field label:hover {
   cursor: pointer;
 }
-/* line 102, ../sass/components/_work.scss */
+/* line 80, ../sass/components/_work.scss */
 #work article .column-one form .switch-field label:first-of-type {
   border-radius: 4px 0 0 4px;
 }
-/* line 106, ../sass/components/_work.scss */
+/* line 84, ../sass/components/_work.scss */
 #work article .column-one form .switch-field label:last-of-type {
   border-radius: 0 4px 4px 0;
 }
-/* line 114, ../sass/components/_work.scss */
+/* line 92, ../sass/components/_work.scss */
 #work article .column-two {
   float: right;
   width: 55%;
   padding-left: 30px;
 }
-/* line 120, ../sass/components/_work.scss */
+/* line 98, ../sass/components/_work.scss */
 #work article .slideshow {
   width: 833px;
   height: 490px;
   max-width: 100%;
   position: relative;
-  margin-top: 25px;
+  margin-top: 32px;
 }
-/* line 127, ../sass/components/_work.scss */
+/* line 105, ../sass/components/_work.scss */
 #work article .slideshow div {
   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-/* line 131, ../sass/components/_work.scss */
+/* line 113, ../sass/components/_work.scss */
 #work article .slideshow img {
   max-width: 100%;
+}
+
+/* line 122, ../sass/components/_work.scss */
+#life .darker {
+  background: #D3D7D7;
+}
+
+/* line 127, ../sass/components/_work.scss */
+#instafeed {
+  margin-top: 25px;
+  text-align: center;
+}
+/* line 131, ../sass/components/_work.scss */
+#instafeed:hover a {
+  opacity: .8;
+}
+/* line 135, ../sass/components/_work.scss */
+#instafeed a {
+  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -ms-transition: opacity .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out;
+}
+/* line 143, ../sass/components/_work.scss */
+#instafeed a:hover {
+  opacity: 1;
+}
+/* line 147, ../sass/components/_work.scss */
+#instafeed a img {
+  padding: 0 10px 10px 0;
 }
 
 @media screen and (max-width: 991px) {

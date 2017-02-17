@@ -2,15 +2,7 @@
 
     article {
     	overflow: hidden;
-
-	    h3 {
-		    padding: 40px 0 0 0;
-		    font-size: 34px;
-		    font-weight: 500;
-		    margin: 0;
-		    color: #3C72CA;
-		    line-spacing: 2px;
-	    }
+    	margin-bottom: 80px;
 
 	    .experience {
 	    	overflow: hidden;
@@ -26,26 +18,12 @@
 	    	width: 40%;
 	    	padding-right: 30px;
 
-		 	h4 {
-			    margin: 25px 0 0 0;
-			    font-size: 24px;
-			    font-weight: 400;
-		    }
-
 		    p {
 			    font-size: 18px;
 			    margin: 0;
 			    margin: 10px 0;
 		    }
 
-		    a {
-		    	text-decoration: none;
-		    	color: #3C72CA;
-
-		    	&:hover {
-		    		text-decoration: underline;
-		    	}
-		    }
 
 		    ul {
 				margin: 0;
@@ -122,10 +100,14 @@
 		    height: 490px;
 		    max-width: 100%;
 		    position: relative;
-		    margin-top: 25px;
+		    margin-top: 32px;
 
 	    	div {
 	    		position: absolute; 
+	    		top:0;
+				bottom:0;  
+				left:0;
+				right:0;
 	    	}
 
 	    	img {
@@ -134,5 +116,37 @@
 	    }
     }
 
+}
+
+#life {
+	.darker {
+		background: #D3D7D7;
+	}
+}
+
+#instafeed {
+	margin-top: 25px;
+	text-align: center;
+
+	&:hover a {
+	    opacity: .8;
+	}
+
+	a {
+		-webkit-transition: opacity .2s ease-in-out;
+		transition: opacity .2s ease-in-out;
+    	-webkit-transition: opacity .2s ease-in-out;
+		-moz-transition:    opacity .2s ease-in-out;
+		-ms-transition:     opacity .2s ease-in-out;
+		-o-transition:      opacity .2s ease-in-out;
+
+		&:hover {
+		    opacity: 1;
+		}
+
+		img {
+			padding: 0 10px 10px 0;
+		}
+	}
 }
 

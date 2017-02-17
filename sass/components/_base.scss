@@ -6,9 +6,34 @@ body {
 	background: #ecf0f1
 }
 
+h2 {
+    padding: 40px 0 0 0;
+    font-size: 34px;
+    font-weight: 500;
+    margin: 0;
+    color: #3C72CA;
+    letter-spacing: 2px;
+}
+
+h3 {
+	margin: 25px 0 0 0;
+	font-size: 24px;
+	font-weight: 400;
+}
+
 p {
 	font-size: 18px;
 	line-height: 18px;
+}
+
+a {
+	text-decoration: none;
+	color: #3C72CA;
+
+	&:hover {
+		text-decoration: underline;
+	}
+		
 }
 
 .clear {

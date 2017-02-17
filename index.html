@@ -14,7 +14,7 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body id="page-top">
-        <!--[if lt IE 8]>
+        <!--[if lt IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
@@ -29,7 +29,7 @@
                         <li class="icon"><a href="facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
                         <li class="icon"><a href="mailto:kevin.scott.horgan@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
                         <li><a href="#work">Work</a></li>
-                        <li><a href="">Life</a></li>
+                        <li><a href="#life">Life</a></li>
                         <li><a href="">Resume</a></li>
                     </ul>
                 </nav>
@@ -44,11 +44,11 @@
             </section>
             <section id="work">
                 <div class="container">
+                <h2>WORK EXPERIENCE</h2>
                     <article>
-                        <h3>WORK EXPERIENCE</h3>
                         <div class="column-one">
-                            <h4>Web Coordinator</h4>
-                            <p>Vertafore | <a href="" target="_blank">www.sircon.com</a></p>
+                            <h3>Sircon.com</h3>
+                            <p>Web Coordinator | Vertafore</p>
                             <ul>
                                 <li>As part of the SNworks team, handle new site builds and redesigns working from Photoshop document design comps with specifications, along with ticket requests for The State News site as well as more than 20 other university sites across the country utilizing responsive website design</li>
                                 <li>Develop websit es using Bootstrap responsive framework, HTML5, CSS3, LESS, Grunt, and Twig. Git and Bibucket used for version control</li>
@@ -56,47 +56,131 @@
                                 <li>As a Senior Developer, review and approve submitted code for QA. Deploy code and assets to live sites. Issue and project tracking in agile workflow with Jira and Basecamp</li>
                             </ul>
                             <form class="form">
-                                <div class="switch-field">
-                                  <input type="radio" id="switch_left" name="switch_2" value="yes" checked/>
-                                  <label for="switch_left">Current</label>
-                                  <input type="radio" id="switch_right" name="switch_2" value="no" />
-                                  <label for="switch_right">Before</label>
+                                <div id="sircon_toggle" class="switch-field">
+                                  <input type="radio" class="switch_current" id="sircon_current" name="sircon_switch" checked/>
+                                  <label for="sircon_current">Current</label>
+                                  <input type="radio" class="switch_before" id="sircon_before" name="sircon_switch" />
+                                  <label for="sircon_before">Before</label>
                                 </div>
                             </form>
                         </div>
                         <div class="column-two">
-                            <div class="shown slideshow" id="slideshow-current">
+                            <div class="shown slideshow current">
                                <div>
                                     <a href="https://www.sircon.com/" target="_blank"><img src="img/sircon-homepage.png"></a>
                                </div> 
                                <div>
-                                    <img src="img/sircon-product-page.png">
+                                    <a href="https://www.sircon.com/" target="_blank"><img src="img/sircon-product.png"></a>
                                </div>
                                <div>
-                                    <img src="">
+                                    <a href="https://www.sircon.com/" target="_blank"><img src="img/sircon-blog.png"></a>
                                </div>
                             </div>
-                            <div class="hidden slideshow" id="slideshow-before">
+                            <div class="hidden slideshow before">
                                <div>
                                     <img src="img/homepage-old.png">
                                </div> 
                                <div>
-                                    <img src="">
+                                    <img src="img/sircon-product-old.png">
                                </div>
                                <div>
-                                    <img src="">
+                                    <img src="img/sircon-blog-old.png">
+                               </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="column-one">
+                            <h3>Keal.com</h3>
+                            <p>Web Coordinator | Vertafore</p>
+                            <ul>
+                                <li>As part of the SNworks team, handle new site builds and redesigns working from Photoshop document design comps with specifications, along with ticket requests for The State News site as well as more than 20 other university sites across the country utilizing responsive website design</li>
+                                <li>Develop websit es using Bootstrap responsive framework, HTML5, CSS3, LESS, Grunt, and Twig. Git and Bibucket used for version control</li>
+                                <li>Utilize SNwork’s Gryphon content management system</li>
+                            </ul>
+                            <form class="form">
+                                <div id="keal_toggle" class="switch-field">
+                                  <input type="radio" class="switch_current" id="keal_current" name="keal_switch" checked/>
+                                  <label for="keal_current">Current</label>
+                                  <input type="radio" class="switch_before" id="keal_before" name="keal_switch"/>
+                                  <label for="keal_before">Before</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="column-two">
+                            <div class="shown slideshow current" id="slideshow-current">
+                               <div>
+                                    <a href="https://www.sircon.com/" target="_blank"><img src="img/keal-homepage.png"></a>
+                               </div> 
+                               <div>
+                                    <a href="https://www.sircon.com/" target="_blank"><img src="img/keal-newsroom.png"></a>
+                               </div>
+                               <div>
+                                    <a href="https://www.sircon.com/" target="_blank"><img src="img/keal-cloud.png"></a>
+                               </div>
+                            </div>
+                            <div class="hidden slideshow before" id="slideshow-before">
+                               <div>
+                                    <img src="img/keal-homepage-old.png">
+                               </div> 
+                               <div>
+                                    <img src="img/keal-newsroom-old.png">
+                               </div>
+                               <div>
+                                    <img src="img/keal-cloud-old.png">
+                               </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="column-one">
+                            <h3>Various</h3>
+                            <p>Senior Web Developer | SNworks</p>
+                            <ul>
+                                <li>As part of the SNworks team, handle new site builds and redesigns working from Photoshop document design comps with specifications, along with ticket requests for The State News site as well as more than 20 other university sites across the country utilizing responsive website design</li>
+                                <li>Develop websit es using Bootstrap responsive framework, HTML5, CSS3, LESS, Grunt, and Twig. Git and Bibucket used for version control</li>
+                                <li>Utilize SNwork’s Gryphon content management system</li>
+                                <li>As a Senior Developer, review and approve submitted code for QA. Deploy code and assets to live sites. Issue and project tracking in agile workflow with Jira and Basecamp</li>
+                            </ul>
+                        </div>
+                        <div class="column-two">
+                            <div class="shown slideshow current" id="slideshow-current">
+                               <div>
+                                    <a href="https://www.sircon.com/" target="_blank"><img src="img/statenews.png"></a>
+                               </div> 
+                               <div>
+                                    <a href="https://www.sircon.com/" target="_blank"><img src="img/dailytargum.png"></a>
+                               </div>
+                               <div>
+                                    <a href="https://www.sircon.com/" target="_blank"><img src="img/collegian.png"></a>
+                               </div>
+                               <div>
+                                    <a href="https://www.sircon.com/" target="_blank"><img src="img/splc.png"></a>
+                               </div> 
+                               <div>
+                                    <a href="https://www.sircon.com/" target="_blank"><img src="img/cml.png"></a>
+                               </div>
+                               <div>
+                                    <a href="https://www.sircon.com/" target="_blank"><img src="img/easternecho.png"></a>
                                </div>
                             </div>
                         </div>
                     </article>
                 </div>
             </section>
+            <section id="life">
+            <div class="container darker">
+                <h2>LIFE EXPERIENCE</h2>
+                <div id="instafeed">
+                </div>
+            </div>
+            </section>
         </main>
 
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
+        <script type="text/javascript" src="js/vendor/instafeed.min.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/nav.js"></script>
 
         <!-- Google Analytics-->
         <script>
