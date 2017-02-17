@@ -52,3 +52,18 @@ a {
 .hidden {
 	display: none;
 }
+
+footer {
+	background-color: #fff;
+	height: 75px;
+
+	p {
+		font-size: 14px;
+		text-align: center;
+
+		a {
+			display: inline-block;
+			padding-top: 5px;
+		}
+	}
+}

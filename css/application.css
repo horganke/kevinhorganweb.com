@@ -61,6 +61,22 @@ a:hover {
   display: none;
 }
 
+/* line 56, ../sass/components/_base.scss */
+footer {
+  background-color: #fff;
+  height: 75px;
+}
+/* line 60, ../sass/components/_base.scss */
+footer p {
+  font-size: 14px;
+  text-align: center;
+}
+/* line 64, ../sass/components/_base.scss */
+footer p a {
+  display: inline-block;
+  padding-top: 5px;
+}
+
 /* line 1, ../sass/components/_nav.scss */
 header {
   background-color: #fff;
@@ -79,8 +95,14 @@ header #logo {
   height: 75px;
   float: left;
   cursor: pointer;
+  font-size: 75px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 75px;
+  color: #3C72CA;
+  letter-spacing: -15px;
 }
-/* line 19, ../sass/components/_nav.scss */
+/* line 25, ../sass/components/_nav.scss */
 header #menuIcon {
   font-size: 30px;
   float: right;
@@ -89,27 +111,27 @@ header #menuIcon {
   margin-top: 17px;
   padding: 6px 10px;
 }
-/* line 27, ../sass/components/_nav.scss */
+/* line 33, ../sass/components/_nav.scss */
 header #menuIcon.fa-close {
   -webkit-text-stroke: 3px black;
 }
-/* line 33, ../sass/components/_nav.scss */
+/* line 39, ../sass/components/_nav.scss */
 header nav {
   display: inline-block;
   float: right;
 }
-/* line 37, ../sass/components/_nav.scss */
+/* line 43, ../sass/components/_nav.scss */
 header nav ul {
   list-style: none;
   margin: 0;
   overflow: hidden;
 }
-/* line 42, ../sass/components/_nav.scss */
+/* line 48, ../sass/components/_nav.scss */
 header nav ul li {
   display: inline-block;
   float: left;
 }
-/* line 46, ../sass/components/_nav.scss */
+/* line 52, ../sass/components/_nav.scss */
 header nav ul li a {
   line-height: 75px;
   margin-left: 30px;
@@ -124,7 +146,7 @@ header nav ul li a {
   border-bottom: 2px solid #fff;
   text-decoration: none;
 }
-/* line 60, ../sass/components/_nav.scss */
+/* line 66, ../sass/components/_nav.scss */
 header nav ul li a:hover {
   -webkit-transition: all .1s ease-out;
   -moz-transition: all .1s ease-out;
@@ -133,11 +155,11 @@ header nav ul li a:hover {
   border-bottom-color: #333;
   text-decoration: none;
 }
-/* line 70, ../sass/components/_nav.scss */
+/* line 76, ../sass/components/_nav.scss */
 header nav ul .icon a {
   border-bottom: none;
 }
-/* line 73, ../sass/components/_nav.scss */
+/* line 79, ../sass/components/_nav.scss */
 header nav ul .icon a .fa {
   font-size: 30px;
   vertical-align: sub;
@@ -147,23 +169,23 @@ header nav ul .icon a .fa {
   -o-transition: all .2s ease-out;
   transition: all .2s ease-out;
 }
-/* line 83, ../sass/components/_nav.scss */
+/* line 89, ../sass/components/_nav.scss */
 header nav ul .icon a .fa-linkedin-square:hover {
   color: #0077b5;
 }
-/* line 87, ../sass/components/_nav.scss */
+/* line 93, ../sass/components/_nav.scss */
 header nav ul .icon a .fa-github-square:hover {
   color: #800080;
 }
-/* line 91, ../sass/components/_nav.scss */
+/* line 97, ../sass/components/_nav.scss */
 header nav ul .icon a .fa-facebook-square:hover {
   color: #3B5998;
 }
-/* line 95, ../sass/components/_nav.scss */
+/* line 101, ../sass/components/_nav.scss */
 header nav ul .icon a .fa-envelope-square:hover {
   color: #D32E2A;
 }
-/* line 104, ../sass/components/_nav.scss */
+/* line 110, ../sass/components/_nav.scss */
 header #navDropDown {
   list-style: none;
   background-color: #f2f2f2;
@@ -177,7 +199,7 @@ header #navDropDown {
   overflow: auto;
 }
 
-/* line 118, ../sass/components/_nav.scss */
+/* line 124, ../sass/components/_nav.scss */
 .open {
   background: #000;
   color: #ffffff;
@@ -351,22 +373,31 @@ header #navDropDown {
   max-width: 100%;
 }
 
-/* line 122, ../sass/components/_work.scss */
-#life .darker {
+/* line 121, ../sass/components/_work.scss */
+#life {
   background: #D3D7D7;
+  padding-bottom: 40px;
 }
 
-/* line 127, ../sass/components/_work.scss */
+/* line 126, ../sass/components/_work.scss */
 #instafeed {
-  margin-top: 25px;
+  padding-top: 25px;
   text-align: center;
 }
-/* line 131, ../sass/components/_work.scss */
-#instafeed:hover a {
-  opacity: .8;
+/* line 130, ../sass/components/_work.scss */
+#instafeed:hover .photo a {
+  opacity: .7;
 }
-/* line 135, ../sass/components/_work.scss */
-#instafeed a {
+/* line 134, ../sass/components/_work.scss */
+#instafeed .photo {
+  padding: 0 10px 10px 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: inline-block;
+}
+/* line 141, ../sass/components/_work.scss */
+#instafeed .photo a {
   -webkit-transition: opacity .2s ease-in-out;
   transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
@@ -374,13 +405,39 @@ header #navDropDown {
   -ms-transition: opacity .2s ease-in-out;
   -o-transition: opacity .2s ease-in-out;
 }
-/* line 143, ../sass/components/_work.scss */
-#instafeed a:hover {
+/* line 149, ../sass/components/_work.scss */
+#instafeed .photo a:hover {
   opacity: 1;
 }
-/* line 147, ../sass/components/_work.scss */
-#instafeed a img {
-  padding: 0 10px 10px 0;
+/* line 155, ../sass/components/_work.scss */
+#instafeed .photo .caption {
+  position: absolute;
+  width: 97%;
+  bottom: -40px;
+  visibility: hidden;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  line-height: 1pt;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+/* line 172, ../sass/components/_work.scss */
+#instafeed .photo .caption .fa-map-marker {
+  padding-right: 5px;
+}
+/* line 177, ../sass/components/_work.scss */
+#instafeed .photo:hover .caption {
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  visibility: visible;
 }
 
 @media screen and (max-width: 991px) {

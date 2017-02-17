@@ -119,33 +119,67 @@
 }
 
 #life {
-	.darker {
-		background: #D3D7D7;
-	}
+	background: #D3D7D7;
+	padding-bottom: 40px;
 }
 
 #instafeed {
-	margin-top: 25px;
+	padding-top: 25px;
 	text-align: center;
 
-	&:hover a {
-	    opacity: .8;
+	&:hover .photo a {
+	    opacity: .7;
 	}
 
-	a {
-		-webkit-transition: opacity .2s ease-in-out;
-		transition: opacity .2s ease-in-out;
-    	-webkit-transition: opacity .2s ease-in-out;
-		-moz-transition:    opacity .2s ease-in-out;
-		-ms-transition:     opacity .2s ease-in-out;
-		-o-transition:      opacity .2s ease-in-out;
+	.photo {
+		padding: 0 10px 10px 0;
+		position: relative;
+		overflow: hidden;
+		cursor: pointer;
+		display: inline-block;
 
-		&:hover {
-		    opacity: 1;
+		a {
+			-webkit-transition: opacity .2s ease-in-out;
+			transition: opacity .2s ease-in-out;
+	    	-webkit-transition: opacity .2s ease-in-out;
+			-moz-transition:    opacity .2s ease-in-out;
+			-ms-transition:     opacity .2s ease-in-out;
+			-o-transition:      opacity .2s ease-in-out;
+
+			&:hover {
+			    opacity: 1;
+			}
+
 		}
 
-		img {
-			padding: 0 10px 10px 0;
+		.caption {
+			position: absolute;
+			width: 97%;
+			bottom: -40px;
+			visibility: hidden;
+			left: 0;
+			background-color: rgba(0,0,0,0.7);
+			z-index: 1000;
+			line-height: 1pt;
+			text-align: center;
+			color: #fff;
+			-webkit-transition: all 300ms ease-out;
+			-moz-transition: all 300ms ease-out;
+			-o-transition: all 300ms ease-out;
+			-ms-transition: all 300ms ease-out;	
+			transition: all 300ms ease-out;
+
+			.fa-map-marker {
+				padding-right: 5px;
+			}
+		}
+
+		&:hover .caption {
+			-moz-transform: translateY(-100%);
+			-o-transform: translateY(-100%);
+			-webkit-transform: translateY(-100%);
+			transform: translateY(-100%);
+			visibility: visible;
 		}
 	}
 }
