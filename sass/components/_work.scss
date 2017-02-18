@@ -64,6 +64,10 @@
 
 	    form {
 
+	    	&.sm {
+	    		display: none;
+	    	}
+
 	    	text-align: center;
 		  		padding-top: 20px;
 				overflow: hidden;

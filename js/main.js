@@ -86,12 +86,17 @@ $(function(){
     },  4000);
 
 	$('.switch-field').click(function() {
-        if($('.switch_before').is(':checked')) { 
+        if($('#sircon_before, #keal_before').is(':checked')) { 
             $(this).closest('article').find('.current, .before').toggleClass('hidden shown');
         }
-        if($('.switch_current').is(':checked')) { 
+        if($('#sircon_before_sm, #keal_before_sm').is(':checked')) { 
+            $(this).closest('article').find('.current, .before').toggleClass('hidden shown');
+        }
+        if($('#sircon_current, #keal_current').is(':checked')) { 
+            $(this).closest('article').find('.current, .before').toggleClass('hidden shown');
+        }
+        if($('#sircon_current_sm, #keal_current_sm').is(':checked')) { 
             $(this).closest('article').find('.current, .before').toggleClass('hidden shown');
         }
 	});
-
 });
