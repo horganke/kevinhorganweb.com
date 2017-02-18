@@ -85,6 +85,14 @@ $(function(){
 
     },  4000);
 
+    $('.sircon input').change(function(){
+        $('.sircon .' + this.className).prop('checked', this.checked);
+    });
+
+    $('.keal input').change(function(){
+        $('.keal .' + this.className).prop('checked', this.checked);
+    });
+
 	$('.switch-field').click(function() {
         if($('#sircon_before, #keal_before').is(':checked')) { 
             $(this).closest('article').find('.current, .before').toggleClass('hidden shown');
