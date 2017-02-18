@@ -89,6 +89,9 @@ $(function(){
         if($('.switch_before').is(':checked')) { 
             $(this).closest('article').find('.current, .before').toggleClass('hidden shown');
         }
+        if($('.switch_current').is(':checked')) { 
+            $(this).closest('article').find('.current, .before').toggleClass('hidden shown');
+        }
 	});
 
 });

@@ -1,3 +1,49 @@
+@media screen and (max-width: 1276px) {
+    #work {
+        article { 
+            margin-bottom: 40px;
+
+            .column-text {
+                float: none;
+                width: 100%;
+            }
+
+            .column-image {
+                float: none;
+                width: 100%;
+                padding-left: 0;
+
+                .slideshow {
+                    margin: 32px auto 0 auto;
+                }
+            }
+
+            .form {
+                display: none;
+
+                &.sm {
+                    display: block;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1066px) {
+    #instafeed {
+        .photo {
+            img {
+                width: 200px;
+            }
+
+            .caption {
+                display: none;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 991px) {
     #masthead {
         h1 {
@@ -6,6 +52,31 @@
 
         a {
             top: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 912px) {
+    #work {
+        article { 
+            margin-bottom: 40px;
+
+            .column-text {
+                float: none;
+                width: 100%;
+            }
+
+            .column-image {
+                float: none;
+                width: 100%;
+                padding-left: 0;
+
+                .slideshow {
+                    height: 0;
+                    padding-bottom: 59%;
+                }
+            }
+
         }
     }
 }
@@ -73,7 +144,17 @@
 
 }
 
-@media (max-width: 658px) {
+@media screen and (max-width: 706px) {
+    #instafeed {
+        .photo {
+            img {
+                width: 150px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 658px) {
     #masthead {
         height: 275px;
 
@@ -86,6 +167,36 @@
             font-size: 18px;
             top: 65%;
             width: 100%;
+        }
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    #work article {
+        .column-text {
+            p {
+                font-size: 14px;
+            }
+
+            ul {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 556px) {
+    #instafeed {
+        .photo {
+            img {
+                width: 100px;
+            }
         }
     }
 }
