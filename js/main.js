@@ -93,7 +93,7 @@ $(function(){
         $('.keal .' + this.className).prop('checked', this.checked);
     });
 
-	$('.switch-field input').click(function() {
+	$('.switch-field input').change(function() {
         if($('#' + this.id).is(':checked')) { 
             $(this).closest('article').find('.current, .before').toggleClass('hidden shown');
         }
