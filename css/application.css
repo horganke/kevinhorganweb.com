@@ -369,31 +369,23 @@ header #navDropDown {
 #work article form .switch-field label:hover {
   cursor: pointer;
 }
-/* line 111, ../sass/components/_work.scss */
-#work article form .switch-field label:first-of-type {
-  border-radius: 4px 0 0 4px;
-}
-/* line 115, ../sass/components/_work.scss */
-#work article form .switch-field label:last-of-type {
-  border-radius: 0 4px 4px 0;
-}
 
-/* line 125, ../sass/components/_work.scss */
+/* line 117, ../sass/components/_work.scss */
 #life {
   background: #D3D7D7;
   padding-bottom: 40px;
 }
 
-/* line 130, ../sass/components/_work.scss */
+/* line 122, ../sass/components/_work.scss */
 #instafeed {
   padding-top: 25px;
   text-align: center;
 }
-/* line 134, ../sass/components/_work.scss */
+/* line 126, ../sass/components/_work.scss */
 #instafeed:hover .photo a {
   opacity: .7;
 }
-/* line 138, ../sass/components/_work.scss */
+/* line 130, ../sass/components/_work.scss */
 #instafeed .photo {
   padding: 0 10px 10px 0;
   position: relative;
@@ -401,7 +393,7 @@ header #navDropDown {
   cursor: pointer;
   display: inline-block;
 }
-/* line 145, ../sass/components/_work.scss */
+/* line 137, ../sass/components/_work.scss */
 #instafeed .photo a {
   -webkit-transition: opacity .2s ease-in-out;
   transition: opacity .2s ease-in-out;
@@ -410,11 +402,11 @@ header #navDropDown {
   -ms-transition: opacity .2s ease-in-out;
   -o-transition: opacity .2s ease-in-out;
 }
-/* line 153, ../sass/components/_work.scss */
+/* line 145, ../sass/components/_work.scss */
 #instafeed .photo a:hover {
   opacity: 1;
 }
-/* line 159, ../sass/components/_work.scss */
+/* line 151, ../sass/components/_work.scss */
 #instafeed .photo .caption {
   position: absolute;
   width: 97%;
@@ -432,11 +424,11 @@ header #navDropDown {
   -ms-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
 }
-/* line 176, ../sass/components/_work.scss */
+/* line 168, ../sass/components/_work.scss */
 #instafeed .photo .caption .fa-map-marker {
   padding-right: 5px;
 }
-/* line 181, ../sass/components/_work.scss */
+/* line 173, ../sass/components/_work.scss */
 #instafeed .photo:hover .caption {
   -moz-transform: translateY(-100%);
   -o-transform: translateY(-100%);
@@ -544,7 +536,7 @@ header #navDropDown {
   }
   /* line 112, ../sass/components/_responsive.scss */
   header nav ul li a {
-    line-height: initial;
+    line-height: inherit;
     margin-left: 0;
   }
   /* line 118, ../sass/components/_responsive.scss */
