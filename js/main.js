@@ -93,18 +93,10 @@ $(function(){
         $('.keal .' + this.className).prop('checked', this.checked);
     });
 
-	$('.switch-field').click(function() {
-        if($('#sircon_before, #keal_before').is(':checked')) { 
+	$('.switch-field input').click(function() {
+        if($('#' + this.id).is(':checked')) { 
             $(this).closest('article').find('.current, .before').toggleClass('hidden shown');
         }
-        if($('#sircon_before_sm, #keal_before_sm').is(':checked')) { 
-            $(this).closest('article').find('.current, .before').toggleClass('hidden shown');
-        }
-        if($('#sircon_current, #keal_current').is(':checked')) { 
-            $(this).closest('article').find('.current, .before').toggleClass('hidden shown');
-        }
-        if($('#sircon_current_sm, #keal_current_sm').is(':checked')) { 
-            $(this).closest('article').find('.current, .before').toggleClass('hidden shown');
-        }
+
 	});
 });

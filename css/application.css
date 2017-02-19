@@ -211,14 +211,15 @@ header #navDropDown {
   height: 550px;
   background: #3C72CA;
   padding: 0 30px;
+  overflow: hidden;
 }
 
-/* line 8, ../sass/components/_masthead.scss */
+/* line 9, ../sass/components/_masthead.scss */
 #introduction {
   position: relative;
   height: 100%;
 }
-/* line 13, ../sass/components/_masthead.scss */
+/* line 14, ../sass/components/_masthead.scss */
 #introduction h1 {
   text-align: center;
   font-size: 48px;
@@ -232,7 +233,7 @@ header #navDropDown {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 27, ../sass/components/_masthead.scss */
+/* line 28, ../sass/components/_masthead.scss */
 #introduction a {
   text-align: center;
   font-size: 28px;
@@ -247,13 +248,13 @@ header #navDropDown {
   transform: translate(-50%, -50%);
   transition: color 0.3s ease;
 }
-/* line 41, ../sass/components/_masthead.scss */
+/* line 42, ../sass/components/_masthead.scss */
 #introduction a .fa {
   display: block;
   text-decoration: none;
   line-height: 0.5;
 }
-/* line 47, ../sass/components/_masthead.scss */
+/* line 48, ../sass/components/_masthead.scss */
 #introduction a:hover {
   color: #000;
   transition: color 0.3s ease;
