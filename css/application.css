@@ -478,11 +478,11 @@ header #navDropDown {
 }
 @media screen and (max-width: 991px) {
   /* line 49, ../sass/components/_responsive.scss */
-  #masthead h1 {
+  #introduction h1 {
     font-size: 38px;
   }
   /* line 53, ../sass/components/_responsive.scss */
-  #masthead a {
+  #introduction a {
     top: 60%;
   }
 }
@@ -581,39 +581,40 @@ header #navDropDown {
   #masthead {
     height: 275px;
   }
-  /* line 165, ../sass/components/_responsive.scss */
-  #masthead h1 {
+
+  /* line 168, ../sass/components/_responsive.scss */
+  #introduction h1 {
     font-size: 20px;
     font-weight: 500;
   }
-  /* line 170, ../sass/components/_responsive.scss */
-  #masthead a {
+  /* line 173, ../sass/components/_responsive.scss */
+  #introduction a {
     font-size: 18px;
     top: 65%;
     width: 100%;
   }
 
-  /* line 177, ../sass/components/_responsive.scss */
+  /* line 180, ../sass/components/_responsive.scss */
   h2 {
     font-size: 24px;
   }
 
-  /* line 181, ../sass/components/_responsive.scss */
+  /* line 184, ../sass/components/_responsive.scss */
   h3 {
     font-size: 20px;
   }
 
-  /* line 187, ../sass/components/_responsive.scss */
+  /* line 190, ../sass/components/_responsive.scss */
   #work article .column-text p {
     font-size: 14px;
   }
-  /* line 191, ../sass/components/_responsive.scss */
+  /* line 194, ../sass/components/_responsive.scss */
   #work article .column-text ul {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 556px) {
-  /* line 201, ../sass/components/_responsive.scss */
+  /* line 204, ../sass/components/_responsive.scss */
   #instafeed .photo img {
     width: 100px;
   }
