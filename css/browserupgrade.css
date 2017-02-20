@@ -1,0 +1,43 @@
+body {
+	background: #3C72CA;
+}
+
+main {
+	display: none;
+}
+
+footer {
+	display: none;
+}
+
+.browserupgrade {
+	text-align: center;
+	padding-top: 105px;
+}
+
+.browserupgrade h1 {
+	font-size: 48px;
+	line-height: 1.5;
+	color: #fff;
+	font-weight: 600;
+}
+
+.browserupgrade p {
+	color: #fff;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 40px;
+}
+
+.browserupgrade a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.browserupgrade a:hover {
+	color: #000;
+}
+
+header nav ul .link {
+	display: none;
+}
