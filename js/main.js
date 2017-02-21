@@ -17,14 +17,14 @@ $(function(){
 
 	//nav
 
-    $('#menuIcon').click(function() {
-        $('main').toggleClass('overlay');
-        $('#menuIcon').toggleClass('open');
-        $('#menuIcon').toggleClass("fa-bars fa-close");
-        $('nav ul').toggleClass('nav-shown');
+    $('#menuIcon, nav ul li a').click(function() {
+        if ($('#menuIcon').is(':visible')) {   
+            $('main').toggleClass('overlay');
+            $('#menuIcon').toggleClass('open');
+            $('#menuIcon').toggleClass("fa-bars fa-close");
+            $('nav ul').toggleClass('nav-shown');
+        }
     });
-
-
 
     // Binding an event handler to all anchors that contain
     // a hash (#), but not necessarily JUST a hash - like href="#"
