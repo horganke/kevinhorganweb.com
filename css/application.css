@@ -610,7 +610,7 @@ header #navDropDown {
 @media screen and (max-width: 480px) {
    /* line 168, ../sass/components/_responsive.scss */
   #introduction h1 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
   }
   /* line 173, ../sass/components/_responsive.scss */
