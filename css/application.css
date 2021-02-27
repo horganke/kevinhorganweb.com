@@ -207,31 +207,31 @@ header #navDropDown {
 
 /* line 1, ../sass/components/_masthead.scss */
 #masthead {
-  position: relative;
-  height: 550px;
-  background: #3C72CA;
-  padding: 0 30px;
-  overflow: hidden;
+    height: calc(100vh - 75px);
+    background: #3C72CA;
+    padding: 0 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* line 9, ../sass/components/_masthead.scss */
 #introduction {
-  position: relative;
-  height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
 }
 /* line 14, ../sass/components/_masthead.scss */
 #introduction h1 {
   text-align: center;
-  font-size: 48px;
-  line-height: 1.5;
-  margin: 0;
-  color: #fff;
-  font-weight: 600;
-  width: 100%;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    font-size: 48px;
+    line-height: 1.5;
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
 }
 /* line 28, ../sass/components/_masthead.scss */
 #introduction a {
@@ -239,13 +239,10 @@ header #navDropDown {
   font-size: 28px;
   font-weight: 500;
   line-height: 1.5;
-  margin: 0;
+  margin-top: 20px;
   color: #fff;
   text-decoration: none;
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
   transition: color 0.3s ease;
 }
 /* line 42, ../sass/components/_masthead.scss */
@@ -577,11 +574,6 @@ header #navDropDown {
     letter-spacing: -10px;
   }
 
-  /* line 162, ../sass/components/_responsive.scss */
-  #masthead {
-    height: 275px;
-  }
-
   /* line 168, ../sass/components/_responsive.scss */
   #introduction h1 {
     font-size: 20px;
@@ -590,7 +582,6 @@ header #navDropDown {
   /* line 173, ../sass/components/_responsive.scss */
   #introduction a {
     font-size: 18px;
-    top: 65%;
     width: 100%;
   }
 
