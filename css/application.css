@@ -260,7 +260,7 @@ header #navDropDown {
 /* line 3, ../sass/components/_work.scss */
 #work article {
   overflow: hidden;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 /* line 7, ../sass/components/_work.scss */
 #work article .experience {
@@ -284,13 +284,13 @@ header #navDropDown {
   margin: 10px 0;
 }
 /* line 28, ../sass/components/_work.scss */
-#work article .column-text ul {
+#work article ul {
   margin: 0;
   font-size: 18px;
   line-height: 26px;
 }
 /* line 33, ../sass/components/_work.scss */
-#work article .column-text ul li {
+#work article ul li {
   margin: 10px 0;
 }
 /* line 39, ../sass/components/_work.scss */
